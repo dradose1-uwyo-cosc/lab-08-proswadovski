@@ -1,8 +1,7 @@
-# Your Name Here
+# Peyton Roswadovski
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section:
+# Submission Date: 11/05/24
+# Lab Section:14
 # Sources, people worked with, help given to:
 # your
 # comments
@@ -13,6 +12,16 @@
 # If they can't be converted return false
 # Other wise return the converted int or float 
 # Floats should only have one decimal point in them 
+
+
+def check_int_or_float(string):
+    returnValue = False
+    try:
+        returnValue = float(string)
+        returnValue = int(string)
+    except:
+        pass
+    return returnValue
 
 
 print("*" * 75)
@@ -38,9 +47,41 @@ print("*" * 75)
 # Remember all inputs are strings, but the function needs ints or floats
 # Call your function and print the resulting list
 
+def slope_intercept(m, b, lx, ux):
+    m_number = check_int_or_float(m)
+    b_number = check_int_or_float(b)
+    lx_number = check_int_or_float(lx)
+    ux_number = check_int_or_float(ux)
+
+    print(m_number, b_number,lx_number, ux_number)
+    if ((m_number or m_number == 0) and (b_number or b_number == 0) and (lx_number or lx_number == 0) and (ux_number or ux_number == 0)):
+        y_arr = []
+        for x in range(lx_number,ux_number):
+            y = m_number * x + b_number
+            y_arr.append(y)
+        return y_arr
+    else:
+        print("one or more of your values are invalid")
+
+
+while True: 
+     m = input("give me an m")
+     if (m == "exit"):
+        break
+     b = input("give me a b")
+     if (b == "exit"):
+        break
+     lx = input("give me a lower x bound")
+     if (lx == "exit"):
+        break
+     ux = input("give me an upper x bound")
+     if (ux == "exit"):
+        break
+     print(slope_intercept(m,b,lx,ux))
+   
+
 print("*" * 75)
-
-
+#     
 # Write a function to solve the quadratic formula
 # https://en.wikipedia.org/wiki/Quadratic_formula
 # Accept inputs for a, b, c
@@ -48,3 +89,13 @@ print("*" * 75)
 # Create a loop like above to prompt the user for input for the three values
 # Create a second function that just does the square root operation 
     # If the number you are trying to take the square root of is negative, return null
+
+def quadratic_formula(a,b,c):
+    a_number = check_int_or_float(a)
+    b_number = check_int_or_float(b)
+    c_number = check_int_or_float(c)
+
+    answers = []
+
+ answer1 = -b_number + **4*a_number*c_number/2*a_number
+ answer2 = -b_number - **4*a_number*c_number/2*a_number
