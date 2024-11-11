@@ -1,8 +1,8 @@
 # Peyton Roswadovski
 # UWYO COSC 1010
-# Submission Date: 11/05/24
+# Submission Date: 11/10/24
 # Lab Section:14
-# Sources, people worked with, help given to:
+# Sources, people worked with, help given to: Lab TAs
 # your
 # comments
 # here
