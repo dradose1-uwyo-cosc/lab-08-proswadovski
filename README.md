@@ -1,7 +1,7 @@
-# [peyton Roswadovski]
+# [Peyton Roswadovski]
 ## [Assignment #08]
-## [Submission date: 11/05/24]
-## Worked with/sources 
+## [Submission date: 11/10/24]
+## Worked with/sources: Lab TAs
 * example
 * example
 * example
